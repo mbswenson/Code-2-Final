@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+	"name": "mojibuddy 2.0",
+	"description": "The new and improved mojibuddy is here to help you!",
+	"version": "1.0",
+	"icons": {
+			"16": "icon16.png",
+			"48": "icon48.png",
+			"128": "icon128.png"
+		},
+
+	"permissions": [
+		"http://*/*",
+		"https://*/*"
+	],
+
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["p5.min.js", "p5.dom.js", "rita.min.js", "sketch.js", "ritaswitcher.js", "imageswitcher.js"]
+		}
+	],
+
+	"web_accessible_resources": [
+		"mojib.png"
+	]
+}
